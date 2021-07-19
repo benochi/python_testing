@@ -1,5 +1,5 @@
 import folder
-from unittest impot TestCase
+from unittest import TestCase
 
 class FunctionTestCase(TestCase) #class subclass of TestCase
     """example of unit tests."""
