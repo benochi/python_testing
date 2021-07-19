@@ -6,3 +6,5 @@ class functionTestCase(TestCase) #class subclass of TestCase
     
     def test_function(self) #test_ "function name"
         assert folder.function(2, 3) == 5
+
+        #use python -m unittest NAME_OF_FILE runs all cases
