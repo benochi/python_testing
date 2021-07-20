@@ -19,3 +19,14 @@ class FlaskTests(TestCase):
   setUp()
   test_1()
   tearDown()
+
+  
+  #if you want setUp and Teardown ONCE before ALL tests and ONCE AFTER all tests:
+  
+  @classmethod
+  def setUpClass(cls):
+      print("Inside setup class")
+    
+  @classmethod
+  def tearDownClass(cls)
+      print("inside teardown class")
