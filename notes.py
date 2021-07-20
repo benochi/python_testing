@@ -5,3 +5,5 @@ app.config['TESTING'] = True
 
 #Do this if using debug toolbar, bit of hack
 app.config['DEBUG_TB_HOSTS'] = ['dont-show-debug-toolbar']
+#debug toolbar will mess up testing when using html = res.get_data(at_text=True)
+#debug toolbar also INTERCEPTS REDIRECTS by default and will change status codes. 
