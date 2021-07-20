@@ -31,4 +31,12 @@ class FunctionTestCase(TestCase) #class subclass of TestCase
                 res = client.get('/redirect-me')
                 
                 self.assertEqual(res.status_code, 302)
-                self.assertEqual(res.location, 'http://localhost/') #don't need /loclahost/5000 for example.  
+                self.assertEqual(res.location, 'http://localhost/') #don't need /loclahost/5000 for example. 
+        
+        def test_redirection_followed(self):
+            with app.tesst_client() as client:
+                res = client.get('rediect-me', follow_redirects=True)
+                html = res.get_data(as_text=True)
+                
+                self.assertEqual(res.statuscode, 200)
+                self.assertIn('<h1>Color Form</h1>', html)
