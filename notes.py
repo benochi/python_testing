@@ -12,5 +12,5 @@ app.config['DEBUG_TB_HOSTS'] = ['dont-show-debug-toolbar']
 #python -m unittest
 #python -m unittest tests_name
 #python -m unittest tests_name.NameViewTestCase
-#python -m unittest tests_name.NameViewTestCase.test_method 
-#EX:#python -m unittest tests_cats.CatsViewTestCase.test_meow
+#python -m unittest tests_name.NameTestCase.test_method 
+#files/cases/methods
