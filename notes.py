@@ -7,3 +7,10 @@ app.config['TESTING'] = True
 app.config['DEBUG_TB_HOSTS'] = ['dont-show-debug-toolbar']
 #debug toolbar will mess up testing when using html = res.get_data(at_text=True)
 #debug toolbar also INTERCEPTS REDIRECTS by default and will change status codes. 
+
+
+#python -m unittest
+#python -m unittest tests_name
+#python -m unittest tests_name.NameViewTestCase
+#python -m unittest tests_name.NameViewTestCase.test_method 
+#EX:#python -m unittest tests_cats.CatsViewTestCase.test_meow
